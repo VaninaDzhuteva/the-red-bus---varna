@@ -460,6 +460,12 @@ blockquote
  	top: 2rem;
  }
  
+ legend ul
+ {
+ 	position: relative;
+ 	bottom: 2rem;
+ }
+ 
   ul li
  {
  	list-style-type: none;
