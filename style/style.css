@@ -1,0 +1,593 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Comic Sans MS", cursive; !important;
+    line-height: 1.75;
+}
+
+/*Header*/
+
+header
+{
+    width: 100%;
+    background-color:  #fffe80;
+    text-align: center;
+}
+
+header h1
+{
+    font-size: 54px;
+    color: #0000ff;
+}
+
+header h2, h3, h5
+{
+    color: #512303;
+}
+
+header span
+{
+  color:   #ff0000;
+}
+
+
+#redBus
+{
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    cursor: pointer;
+    width: 12%;
+}
+
+#redBus:hover
+{
+    -o-transform: rotate(-20deg);;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+#phonics
+{
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    width: 16%;
+    height: 16%;
+}
+
+#phonics:hover
+{
+    -o-transform: rotate(20deg);;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+}
+
+#headerHome h2
+{
+    -webkit-animation: zoom 2s 1 ease;
+    -moz-animation:  zoom 2s 1 ease;
+    -o-animation: zoom 2s 1 ease;
+    animation: zoom 2s 1 ease;
+}
+
+@-webkit-keyframes zoom
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-215px);
+    }
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+#headerHome h1
+{
+    -webkit-animation: zoomTwo 3s 1 ease;
+    -moz-animation:  zoomTwo 3s 1 ease;
+    -o-animation: zoomTwo 3s 1 ease;
+    animation: zoomTwo 3s 1 ease;
+}
+
+@-webkit-keyframes zoomTwo
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-555px);
+    }
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+#headerHome h3
+{
+    -webkit-animation: zoomThree 6s  1 ease;
+    -moz-animation:  zoomThree 6s  1 ease;
+    -o-animation: zoomThree 6s  1 ease;
+    animation: zoomThree 6s  1 ease;
+}
+
+@-webkit-keyframes zoomThree
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(255px);
+    }
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+#headerHome h5
+{
+    font-size: medium;
+    -webkit-animation: zoomFour 6s 4s 1 ease;
+    -moz-animation:  zoomFour 6s 1 ease;
+    -o-animation: zoomFour 6s 1 ease;
+    animation: zoomFour 6s 1 ease;
+}
+
+@-webkit-keyframes zoomFour
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(285px);
+    }
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+/*Navigation Menu*/
+
+.navbar
+{
+    margin-bottom: 0;
+    border-radius:0;
+}
+
+.navbar-default
+{
+    border: 0;
+    background-color: #80dfff;
+    width: 100%;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-default .nav li
+{
+    border: 0;
+}
+
+.navbar-default .nav li a
+{
+    color: #000000;
+    font-size: 2rem;
+    padding-left: 7.5rem;
+}
+
+.navbar-default .nav a:hover
+{
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+{
+    background-color:  #00bfff;
+    color: #ffffff;
+}
+
+#icons 
+{
+	position: absolute;
+	top: 17rem;
+	left: 0;
+	right: 0;
+}
+
+#icons img:hover
+{
+	-ms-transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+	cursor: pointer;
+}
+
+/*Content*/
+
+    /*Home Section*/
+
+
+#main
+{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    background-color:  #ffffff;
+}
+
+
+#main #information
+{
+
+    width: 80%;
+    font-size: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-indent: 2rem;
+    text-align: justify;
+    position: relative;
+    left: 10%;
+}
+
+#main .blue
+{
+    color: #0000ff;
+}
+
+#main .red
+{
+    color: #ff0000;
+}
+
+#courseInfo
+{
+    background-color: #ffff99;
+    position: relative;
+    top: 2rem;
+    left: 25%;
+    width: 50%;
+    padding: 2rem 2rem 2rem 2rem;
+    box-shadow: 2px 2px 3px 2px #3f3f3f;
+}
+
+#courseInfo h2
+{
+    color: #ff0000;
+}
+
+#courseInfo p
+{
+    text-align: center;
+    font-size: larger;
+}
+
+#courseInfo li
+{
+    font-size: medium;
+    list-style-type: none;
+}
+
+.list:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin-right: 15px;
+    color: #ff0000;
+}
+
+#main #letter
+{
+    background-color: #ffffff;
+    text-align: justify;
+    text-indent: 2rem;
+    padding-top: 2rem ;
+    box-shadow: 2px 2px 3px 2px #3f3f3f;
+    position: relative;
+    top: 5rem;
+    width: 80%;
+    left: 10%;
+}
+
+blockquote
+{
+	margin: 0;
+}
+
+#letter #quote
+{
+    text-align: right;
+    padding-right: 2rem;  
+    font-size: large;
+}
+
+    /*About Us Section*/
+
+#main #aboutUs
+{
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 2rem;
+    width: 80%;
+    position: relative;
+    left: 9%;
+}
+
+#aboutUs img
+{
+    max-width: 30%;
+    min-height: 40%;
+    float: left;
+    padding-right: 2rem;
+}
+
+#main #ourApprouch
+{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+/*Courses*/
+
+#courses
+{
+    text-align: center;
+}
+
+#courses p
+{
+    font-size: large;
+}
+
+#courses li
+{
+    list-style-type: none;
+    font-size: medium;
+
+}
+
+.list2:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin-right: 15px;
+    color: #512303;
+}
+
+/*Table Calendars*/
+
+#calendar
+{
+    padding-top: 4rem;
+}
+
+#calendar  p
+{
+	font-size: 1.9rem;
+}
+
+#calendar span
+{
+	padding-left: 30rem;
+}
+
+#calendar #february
+{
+	padding-left: 32rem;
+}
+
+#calendar #march
+{
+	padding-left: 30rem;
+	position: relative;
+	bottom: 24.2rem;
+}
+
+#calendar #april
+{
+	padding-left: 35rem;
+	position: relative;
+    bottom: 24.2rem;
+}
+
+#main table
+{
+    width: 30%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+ .week
+{
+    background-color:  #66d8ff;
+}
+
+ .regDays
+ {
+    background-color: #ffff99;
+ }
+
+ .courseStarts
+ {
+     background-color: #99ff99;
+ }
+ 
+ .courseEnds
+ {
+ 	background-color:  #ff8080;
+ }
+ 
+ #tableOne
+ {
+	  position: relative;
+	  left: 15%;
+ }
+ 
+ #tableTwo
+ {
+	 position: relative;
+	 left: 50%;
+	 bottom: 24.2rem;
+ }
+ 
+ #tableThree
+ {
+	 position: absolute;
+	 bottom: 1rem;
+	 left: 15%;
+ }
+ 
+ #tableFour
+ {
+	position: absolute;
+	bottom:1rem;
+	left: 50%;	
+ }
+ 
+  legend
+ {
+ 	position: relative;
+ 	left: 1%;
+ 	top: 4rem;
+ }
+ 
+  ul li
+ {
+ 	list-style-type: none;
+ 	
+ }
+ 
+ #regDay
+ {
+ 	width: 2rem;
+ 	height: 2rem;
+ 	background-color: #ffff99;
+ }
+
+ #startCourse
+ {
+ 	width: 2rem;
+ 	height: 2rem;
+ 	background-color: #99ff99;
+ }
+ 
+ #endCourse
+ {
+ 	width: 2rem;
+ 	height: 2rem;
+ 	background-color: #ff8080;
+ }
+ 
+ 
+ #phonicsInfo
+ {
+ 
+     position: relative;
+     width: 90%;
+    left: 3%;
+    
+ }
+
+ #phonicsInfo h2
+ {
+     text-align: center;
+     padding-bottom: 3rem;
+ }
+
+ #phonicsInfo p
+ {
+     text-align: justify;
+     text-indent: 2rem;
+     font-size: large;
+ }
+
+#phonicsInfo ol{
+    font-size: large;
+}
+
+#googleCalendar
+{
+	position: relative;
+	left: 40%;
+}
+
+/*Contact Section*/
+
+#contacts
+{
+	text-align: center;
+	
+}
+
+#contacts h1
+{
+	padding-bottom: 2rem;
+}
+
+#details
+{
+	border: 3px solid black;
+	width: 40%;
+	border-radius: 8px;
+	position: relative;
+	left: 30%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+#contacts p
+{
+	font-size: large;	
+}
+
+.fb-page
+{
+	position: relative;
+	top: 5rem;
+}
+
+#main #buttons
+{
+	text-align: center;
+}
+
+/*Footer*/
+
+footer
+{
+    background-color: #80dfff;
+    height: 50px;
+    position: relative;
+    top: 10rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: large;
+    padding:  14px ;
+}
+
+footer p
+{
+    margin: 0;
+}
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
